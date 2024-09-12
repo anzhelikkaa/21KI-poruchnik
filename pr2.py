@@ -1,10 +1,3 @@
-a = "Bobik"
-b = 5.14
-c = "Hello"
-d = 16
-f = True
-i = 23 
-h = 60
 vova = ["Bobik", 5.14, "Hello", 16, True, 23, 60]
 vova1 = [type(x) for x in vova]
 
