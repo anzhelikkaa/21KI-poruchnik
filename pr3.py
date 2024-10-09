@@ -10,5 +10,10 @@ dict = {
     },
     4: [10, 20, 30]
 }
-
+dict_types = {
+    1: str,  
+    2: int,  
+    3: dict,  
+    4: list  
+}
 print(dict)
