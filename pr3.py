@@ -1,4 +1,4 @@
-dict = {
+dict1 = {
     1: "ананас",
     2: 42,
     3: {
@@ -10,7 +10,12 @@ dict = {
     },
     4: [10, 20, 30]
 }
-dict_types = {}
-for key, value in dict.items():
-    if 
-print(dict_types)
+
+dict1_types = {}
+for key, value in dict1.items():
+        if isinstance(value, dict):
+            dict1_types[key] = {key: type(value) for key, value in value.items()}
+        else:
+            dict1_types[key] = type(value)
+
+print(dict1_types)
