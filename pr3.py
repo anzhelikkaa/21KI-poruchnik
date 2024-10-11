@@ -6,14 +6,11 @@ dict = {
         "b": 3.14,
         "c": True,
         "d": [1, 2, 3],
-        "f": {"Анжеліка": "Поручнік"}
+        "f": {"Анжеліка", "Поручнік"}
     },
     4: [10, 20, 30]
 }
-dict_types = {
-    1: str,  
-    2: int,  
-    3: dict,  
-    4: list  
-}
-print(dict)
+dict_types = {}
+for key, value in dict.items():
+    if 
+print(dict_types)
