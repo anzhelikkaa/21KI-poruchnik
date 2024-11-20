@@ -325,7 +325,4 @@ def calculate_results(chat_id):
     bot.send_message(chat_id, "Бажаєте спробувати ще раз? Напишіть /start")
 
 if __name__ == '__main__':
-    try:
         bot.polling(none_stop=True)
-    except Exception as e:
-        print(f"Сталася помилка: {e}")
