@@ -1,4 +1,4 @@
-import telebot  # Додано імпорт telebot
+import telebot  
 from telebot.types import ReplyKeyboardMarkup
 from bot_instance import bot
 from data.questions import get_random_questions
@@ -17,7 +17,6 @@ def next_question(chat_id):
     user = user_data[chat_id]
     question_data = user['questions'][user['current_question']]
 
-    # Створюємо клавіатуру
     markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     for answer in question_data['answers']:
         markup.add(answer)
