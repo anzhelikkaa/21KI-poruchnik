@@ -3,7 +3,7 @@ from handlers.start_handler import show_topics
 from handlers.topic_handler import handle_topic_selection
 from handlers.quiz_handler import start_quiz, handle_answer
 from data.questions import questions
-from data.user_data import user_data  # Імпортуємо user_data із data.user_data
+from data.user_data import user_data 
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
