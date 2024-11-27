@@ -1,7 +1,7 @@
 from telebot.types import ReplyKeyboardMarkup
 from bot_instance import bot
 from data.questions import questions
-from data.user_data import user_data  # Тепер імпортуємо із data.user_data
+from data.user_data import user_data  
 
 def show_topics(chat_id, user):
     markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
