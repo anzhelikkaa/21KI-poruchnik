@@ -1,6 +1,6 @@
 from telebot.types import ReplyKeyboardMarkup
 from bot_instance import bot
-from data.user_data import user_data  # Імпортуємо user_data із data.user_data
+from data.user_data import user_data
 
 def handle_topic_selection(chat_id, selected_topic):
     user_data[chat_id] = {'selected_topic': selected_topic}
